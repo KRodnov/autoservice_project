@@ -1,0 +1,49 @@
+body {
+    background-color: wheat;
+}
+
+.reg {
+    margin-top: 30px;
+     width: 600px;
+     font-size: 24px;
+    text-align: center;
+ }
+
+#addBtn {
+    margin-right: 50px;
+}
+
+.out {
+    border: 1px solid black;
+    min-width: 200px;
+    min-height: 200px;
+    background-color: white;
+    font-size: 14px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.out.high {
+    background-color: #FF0000 !important;
+}
+
+.out.medium {
+    background-color: #FFFF00;
+}
+
+#outPut {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+#number {
+    float: right;
+}
+
+.field {
+    margin-top: 30px;
+    width: 370px;
+}

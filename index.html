@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Автосервис</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<h1>Учетная система автосервиса</h1>
+
+<button id="addBtn">Добавить автомобиль</button>
+<button id="cancelBtn">Отменить</button>
+
+
+<div class="reg">
+
+    <fieldset>
+        <input type="number" id="number" placeholder="Номер заявки">
+        <br>
+        <br>
+        <label for="urgency">Выберите срочность выполнения работы</label>
+        <select name="" id="urgency">
+            <option value='high'>Очень срочно</option>
+            <option value='medium'>Срочно</option>
+            <option value='low'>Не срочно</option>
+        </select>
+        <br>
+        <br>
+    <label for="regNum">Государственный номер авто</label>
+<input id="regNum" placeholder="Введите гос. номер авто">
+        <br>
+        <br>
+    <label for="modelAuto">Марка автомобиля</label>
+    <input id="modelAuto" placeholder="Введите марку авто">
+        <br>
+        <br>
+    <label for="nameOwner">ФИО владельца автомобиля</label>
+    <input id="nameOwner" placeholder="Введите ФИО">
+        <br>
+        <br>
+    <label for="phoneOwner">Телефон владельца автомобиля</label>
+    <input type="number" id="phoneOwner" placeholder="Введите телефон">
+        <br>
+        <br>
+    <label for="kindWork">Вид работ</label>
+    <select name="" id="kindWork">
+        <option value="Ремонт">Ремонт</option>
+        <option value="ТО">ТО</option>
+    </select>
+        <br>
+        <br>
+    <label for="selectMechanic">Назначен мастер</label>
+    <select name="" id="selectMechanic">
+        <option value="Иванов Иван Иванович">Иванов Иван Иванович</option>
+        <option value="Петров Петр Петрович">Петров Петр Петрович</option>
+        <option value="Алексеев Алексей Алексеевич">Алексеев Алексей Алексеевич</option>
+    </select>
+        <br>
+        <br>
+    <label for="priceWork">Цена работ</label>
+    <input type="number" id="priceWork" placeholder="Введите цену">
+        <br>
+        <br>
+    <label for="comments">Комментарий</label>
+        <textarea type="text" id="comments" placeholder="Ваш комментарий"></textarea>
+        <br>
+        <br>
+        <button id="regBtn">Зарегистрировать заявку</button>
+    </fieldset>
+</div>
+<div class="field">
+    <fieldset >
+        <legend>Фильтры</legend>
+        <button id="sorting">Сортировка</button>
+<!--        <button class="filter-button" id="filterAll">Все</button>-->
+<!--        <button class="filter-button" id="filterHigh">Очень срочные</button>-->
+<!--        <button class="filter-button" id="filterMedium">Cрочные</button>-->
+<!--        <button class="filter-button" id="filterLow">Несрочные</button>-->
+    </fieldset>
+</div>
+
+<div id="outPut"></div>
+<script src="script.js"></script>
+</body>
+</html>
