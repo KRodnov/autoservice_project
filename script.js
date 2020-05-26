@@ -40,9 +40,9 @@ let isNumberUniq = function (number) {
         uniq = false;
 
     }
-    })
+    });
     return uniq;
-}
+};
 
 
 $('#regBtn').click(function () {
@@ -59,7 +59,7 @@ $('#regBtn').click(function () {
     let kindWork = $('#kindWork').val();
     let selectMechanic = $('#selectMechanic').val();
     let priceWork = $('#priceWork').val();
-    let comments = $('#coments').val();
+    let comments = $('#comments').val();
     let urgency = $('#urgency').val();
 
     inform.push({number, regNum, modelAuto, nameOwner, phoneOwner, kindWork, selectMechanic,
